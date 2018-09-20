@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="UTF-8" />
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="../models/weatherStorage.js"></script>
+    <script src="../models/weatherCall.js"></script>
+    <script src="../view/showOffPage.js"></script>
+    <link rel="stylesheet" type="text/css" href="../assets/css/appliedToAll.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/jsContentPage.css">
+</head> 
+
+<body>
+    <nav>
+        <ul class="meniu">
+            <li>
+               <a href="home.html">HOME</a>
+            </li>
+            <li> 
+               <a href="aboutMe.html">ABOUT ME</a>
+            </li>
+            <li>
+               <a href="">CV</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header>Show Off Page</header>
+
+    <article>
+
+        <section id="gameSectionId">
+            <h1 id = "game">Rock Paper Scissors Game</h1><br>
+            <div>The rules are simple. Pick one of the three: rock, paper or scissors and see if you win!<br><br>
+                <p>Choose your weapon: <input type="text" name="userChoice"></p><br>
+                <button value="play" name="playButton">Play</button>
+                <div id="gameResultId"> <!-- The response will be generated here--> </div><br>
+            </div> 
+        </section>
+
+        <section id="weatherSectionId">
+            <h1>Cluj Weather</h1><br>
+            <div>
+                <p>The weather in Cluj-Napoca will be displayed and the temperature scale you choose will be remembered </p><br>
+                <div>Current temperature is: 
+                    <p id="weatherDetails"><!-- Weather will be generated here --> </p> 
+                </div><br>                
+                <button value="celsius" name="celsiusButton">Celsius</button>
+                <button value="fahrenheit" name="fahrenheitButton">Fahrenheit</button><br>
+            </div>
+        </section>
+
+        <section id="dogSectionId">
+            <h1>Dogs are man's best friend</h1><br>
+            <div>Reasons why dogs make your day better?
+                <ol>
+                    <li>You can always lean on them in times of need</li>
+                    <li>They are always excited to see you</li>
+                    <li>They help you with your work </li>
+                    <li>They always mean well</li>
+                    <li>They always make mondays less awful</li>
+                    <li>Even when you fight, it’s okay</li>
+                    <li>And when it comes down to it. You’re best friends and that’s the best thing of all</li>
+                </ol><br>
+                <button value="picture" name="dogPicture">Get your dog picture here</button>
+                <div><center id="randomPhotoId"></center> <!-- The random Photo will be generated here --> </div><br>
+            </div>
+        </section>
+
+       <section id="lyricsSectionId">
+            <h1>Forgot the lyrics?</h1><br>
+            <div>
+                <p>Ever heard a song and wondered what the lyrics are? Type in the artist and song name to find out</p><br>
+                <input type = "text" name = "artist" placeholder = "Artist"> <br>
+                <input type = "text" name = "song" placeholder = "Song"> <br><br>
+                <button value="lyrics" name="findLyrics">Get lyrics</button><br><br>
+                <div id="lyricsContainerId"> <!-- Lyrics will be generated here --> </div>
+            </div>
+        </section>
+
+
+
+    </article>
+
+
+</body>
+</html>

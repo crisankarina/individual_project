@@ -1,0 +1,102 @@
+article {
+    position: relative;
+    /* margin: 8px 0 */
+}
+/* button[value=play], button[value=picture], button[value=lyrics], button[value=celsius], button[value=fahrenheit] */
+/* GAME */
+input[type=text], button{
+    background: black;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 3px 1px;
+    cursor: text;
+}
+/* input[type=text]:focus {
+    background: rgb(66, 66, 65);
+} */
+
+button {
+    padding: 3px 20px;
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #063852;
+}
+button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+ol {
+    list-style-type: decimal;
+    margin: 3px;
+    padding-left: 40px;
+}
+
+/* DOG PHOTO */
+#dogPhotoId {
+    height: 200px;
+    margin-top: 5px;
+    border: 1px solid #EBDCB2; 
+    box-shadow: 1px 2px 8px 8px rgba(0, 0, 0, 0.20);
+}
+
+/* Forgot the lyrics? */
+
+/* Weather Call */
+
+/* Flex-Container */
+article {
+    width: 100%;
+    /* min-height: 100vh; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+section {
+    flex-basis: 40%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+h1{
+    text-align: center;
+}
+
+#gameSectionId {
+    background-color: #004445;
+    box-shadow: 10px 10px 5px #021C1E;
+}
+
+#gameSectionId:hover {
+    text-shadow: 2px 2px 5px #E6DF44;
+}
+
+#weatherSectionId {
+    background-color: #FB6542;
+    box-shadow: 10px 10px 5px #fa461e;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#lyricsSectionId {
+    background-color: #A1BE95;
+    box-shadow: 10px 10px 5px #e7e4b1;
+}
+
+#lyricsSectionId h1 {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px #EDAE01, 0 0 5px #EDAE01;
+}
+
+#dogSectionId {
+    background-color: #662E1C;
+    box-shadow: 10px 10px 5px #c29b56;
+}
+
+#dogSectionId h1 {
+    color: #C9A66B;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}

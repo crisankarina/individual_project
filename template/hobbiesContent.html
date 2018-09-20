@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="UTF-8" />
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="../view/hobbiesPage.js"></script>
+    <link rel="stylesheet" type="text/css" href="../assets/css/appliedToAll.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/jsContentPage.css">
+</head> 
+
+<body>
+    <nav>
+        <ul class="meniu">
+            <li>
+               <a href="home.html">HOME</a>
+            </li>
+            <li> 
+               <a href="aboutMe.html">ABOUT ME</a>
+            </li>
+            <li>
+               <a href="">CV</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header>Hobbies and Passions</header>
+
+    <article>
+
+        <section id="readingSectionId">
+            <h1 id = "read">Reading</h1><br>
+            <div>
+                <p>I often read books that are also screened, I choosed  to bring to you some quotes from my favorite characters from Game of Thrones.</p>
+                <input id= "cersei" type="radio" name="character" value="cersei"> Cersei
+                <input type="radio" name="character" value="littlefinger"> Littlefinger
+                <input type="radio" name="character" value="tyrion"> Tyrion
+                <input type="radio" name="character" value="bronn"> Bronn
+                <input type="radio" name="character" value="hound"> Hound
+                <input type="radio" name="character" value="varys"> Varys
+                <div id="quoteContainerId"><!-- quote will be generated here --></div>
+            </div>
+
+        </section>
+
+        <section id="gamingSectionId">
+            <h1>Gaming</h1><br>
+            <div>
+                <p>My love for programming originally came from playing video games. Some of the games I played:</p>
+                <ul>
+                    <li>
+                        <a href="https://play.eune.leagueoflegends.com/ro_RO" target="_blank"><img src="https://news-a.akamaihd.net/public/images/misc/GameBox.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="http://us.blizzard.com/en-us/games/cataclysm/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bd/Cataclysm_Cover_Art.png/220px-Cataclysm_Cover_Art.png"></a> 
+                    </li>
+                    <li>
+                        <a href="https://www.ubisoft.com/en-us/game/far-cry-4/" target="_blank"><img src="https://file-cdn.scdkey.com/product/P201609081840430539.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="https://tombraiders.net/stella/tomb9.html" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/TombRaider2013.jpg/220px-TombRaider2013.jpg"></a> 
+                    </li>
+                </ul>
+                <p>* Click on them for more information.</p>
+            </div>
+        </section>
+
+        <section id="jokeSectionId">
+            <h1>Joke</h1><br>
+            <p>Let's end this with a joke!</p>
+            <button value="joke" name="jokeButton">Crack me up</button>
+            <div id="jokeContainerId"><!-- content will be generated here --></div>
+        </section>
+
+       <section id="animalsSectionId">
+            <h1>Animals</h1><br>
+        </section>
+
+
+
+    </article>
+
+
+</body>
+</html>

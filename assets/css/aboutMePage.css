@@ -1,0 +1,66 @@
+/* Buttons */
+.info {
+  position: relative;
+  margin-top: 100px;
+  border: 2px solid white;
+  padding: 6%;
+  font-size: 20px;
+  -webkit-transition-duration: 0.3s; 
+  transition-duration: 0.3s;
+
+}
+/* #011A27 */
+.info:hover {
+  background-color: #063852;
+  border-radius: 45px 40px;
+  cursor: pointer;
+}
+
+#js-box {
+  float: left;
+  margin-left: 20%;
+}
+
+#hobbies-box {
+  float: right;
+  margin-right: 20%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+/* TECHNICAL PART */
+.technicalClass {
+  list-style-type: circle;
+  display: inline-block;
+  position: relative;
+  margin-left: 300px;
+  visibility: hidden;
+}
+
+.technicalClass li {
+  padding: 10px;
+}
+
+.technicalClass a, .hobbiesClass a {
+  cursor: pointer;
+}
+
+.technicalClass li:hover, .hobbiesClass li:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* HOBBIES PART */
+.hobbiesClass {
+  list-style-type: circle;
+  display: inline-block;
+  position: relative;
+  margin-left: 150px;
+  visibility: hidden;
+}
+.hobbiesClass li {
+  padding: 10px;
+}
+
+

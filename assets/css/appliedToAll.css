@@ -1,0 +1,39 @@
+* {
+    margin: 0; 
+    padding: 0;
+    color:#ffffff;
+    z-index: 4; 
+    cursor: default;  
+    box-sizing: border-box; 
+}
+
+body {
+    background: black;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+}
+
+header { 
+    position: relative; 
+    text-align: center;
+    font-size: 30px;
+}
+
+.meniu {
+    list-style-type: none;
+} 
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.meniu li {
+    display: inline-block;
+    position: relative;
+    padding: 1%;
+    margin: 0.5%;
+    border-bottom: 1px outset #ebebe0;
+    font-size: 15px;
+} 
+
