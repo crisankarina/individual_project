@@ -32,37 +32,33 @@ console.log("hello");
         console.log(getValue);
     }
 
-
     //TvSeries
-
-    var getTvSeries = function(show) {
+    var getTvSeries = function(showValue) {
         $.ajax({
-            url: "http://api.tvmaze.com/search/shows?q=" + show,
-            success: displayTvSeries(show)
+            url: `http://api.tvmaze.com/search/shows?q=` + showValue,
+            success: displayTvSeries
         })
     }
 
-    function displayTvSeries(response) {
-        var showList = '<ul>'
-        for(i = 0; i < response.length; i++) {
-            var showName = response[i].show.name;
-            var url = response[i].show.url;
-            showList += `<li>` + showName + ` ` + `<a href="` + url + `" target = "_blank"> ` + url + `</a>` + `</li>`
-
-        }
-        showList += '</ul>'
-        return showList;
-        var tvSeriesContainer = $("#tvSeriesContainerId");
-
-        tvSeriesContainer.html(showList);
-    }
-
     $('button[name="tvSeriesButton"]').on("click", function(){
-        var shows = $("#seriesId").val();
-        getTvSeries(shows);
+        var inputText = $('input[name="tvSeries"]').val();
+        getTvSeries(inputText);
     })
 
+    function displayTvSeries(show) {
+        $("#tvSeriesContainerId").html(arrangeInformation(show));
+    }
 
+    function arrangeInformation(response) {
+        var showList = `<ul>`
+        for(var i = 0; i < response.length; i++) {
+            var showName = response[i].show.name;
+            var url = response[i].show.url;
+            showList += `<li>` + showName + `<br>` + `<p>Link where you can find the TV series</p>` + `<a href="` + url + `" target="_blank">` + url + `</a>` + `</li>`;
+        }
+        showList += `</ul>`
+        return showList;
+    }
 
     //Joke
     var jokeContainer = $("#jokeContainerId");
