@@ -10,7 +10,7 @@
     crossorigin="anonymous"></script>
     <script src="../view/hobbiesPage.js"></script>
     <link rel="stylesheet" type="text/css" href="../assets/css/appliedToAll.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/jsContentPage.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/hobbiesContentPage.css">
 </head> 
 
 <body>
@@ -28,30 +28,42 @@
         </ul>
     </nav>
 
-    <header>Hobbies and Passions</header>
+    <!-- <header>Hobbies and Passions</header> -->
 
     <article>
 
         <section id="readingSectionId">
             <h1 id = "read">Reading</h1><br>
-            <div>
-                <p>I often read books that are also screened, I choosed  to bring to you some quotes from my favorite characters from Game of Thrones.</p>
-                <input type="radio" name="character" value="cersei"> Cersei
-                <input type="radio" name="character" value="littlefinger"> Littlefinger
-                <input type="radio" name="character" value="tyrion"> Tyrion
-                <input type="radio" name="character" value="bronn"> Bronn
-                <input type="radio" name="character" value="hound"> Hound
-                <input type="radio" name="character" value="varys"> Varys
-                <div id="quoteContainerId"><!-- quote will be generated here --></div>
-            </div>
-
+            <p>I often read books that are also screened, I choosed  to bring to you some quotes from my favorite characters from Game of Thrones.</p><br>
+            <div class="inputCharacterClass">
+                <p>
+                    Cersei <input type="radio" name="character" value="cersei"> 
+                </p>
+                <p>
+                    Littlefinger <input type="radio" name="character" value="littlefinger"> 
+                </p>
+                <p>
+                    Tyrion <input type="radio" name="character" value="tyrion"> 
+                </p>
+                <p>
+                    Bronn <input type="radio" name="character" value="bronn"> 
+                </p>
+                <p>
+                    Hound <input type="radio" name="character" value="hound"> 
+                </p>
+                <p>
+                    Varys <input type="radio" name="character" value="varys"> 
+                </p>
+                
+            </div><br>
+            <div id="quoteContainerId"><!-- quote will be generated here --></div>
         </section>
 
         <section id="gamingSectionId">
             <h1>Gaming</h1><br>
             <div>
                 <p>My love for programming originally came from playing video games. Some of the games I played:</p>
-                <ul>
+                <ul class="gamingImgClass">
                     <li>
                         <a href="https://play.eune.leagueoflegends.com/ro_RO" target="_blank"><img src="https://news-a.akamaihd.net/public/images/misc/GameBox.jpg" width="100px"></a>
                     </li>
@@ -64,8 +76,8 @@
                     <li>
                         <a href="https://tombraiders.net/stella/tomb9.html" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/TombRaider2013.jpg/220px-TombRaider2013.jpg" width="100px"></a> 
                     </li>
-                </ul>
-                <p>* Click on them for more information.</p>
+                </ul><br>
+                <p id="moreInfoId">* Click on them for more information.</p>
             </div>
         </section>
 
@@ -93,7 +105,7 @@
 
 
     </article>
-
+    <footer><a href="contactPage.html">Contact</a></footer>
 
 </body>
 </html>

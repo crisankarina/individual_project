@@ -56,7 +56,7 @@ console.log("hello");
             var url = response[i].show.url;
             showList += `<li>` + showName + `<br>` + `<p>Link where you can find the TV series</p>` + `<a href="` + url + `" target="_blank">` + url + `</a>` + `</li>`;
         }
-        showList += `</ul>`
+        showList += `</ul>`;
         return showList;
     }
 
@@ -75,7 +75,7 @@ console.log("hello");
         jokeContainer.append(setUp);
 
         setTimeout(function(){
-            var punchLine = "<p>" + response.punchline + "</p>";
+            var punchLine = "<p id=`setUpId`>" + response.punchline + "</p>";
             jokeContainer.append(punchLine);
         }, 1000) 
     }

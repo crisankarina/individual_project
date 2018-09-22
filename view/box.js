@@ -20,7 +20,7 @@ function onHtmlLoaded(){
     var hobbiesBox = $("#hobbies-box");
     hobbiesBox.on("click", displayHobbies);
 
-    
+  
     
     
 }

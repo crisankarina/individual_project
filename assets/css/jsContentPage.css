@@ -54,6 +54,7 @@ article {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 1em;
+    text-align: center;
 }
 
 section {
@@ -82,21 +83,21 @@ h1{
 }
 
 #lyricsSectionId {
-    background-color: #A1BE95;
-    box-shadow: 10px 10px 5px #e7e4b1;
+    background-color: #FA6775;
+    box-shadow: 10px 10px 5px #fc9ca6;
 }
 
 #lyricsSectionId h1 {
-    color: white;
-    text-shadow: 1px 1px 2px black, 0 0 25px #EDAE01, 0 0 5px #EDAE01;
+    color: #f52549;
+    text-shadow: 1px 1px 2px black, 0 0 25px #fee6e9, 0 0 5px #fee6e9;
 }
 
 #dogSectionId {
-    background-color: #662E1C;
-    box-shadow: 10px 10px 5px #c29b56;
+    background-color: #75b1a9;
+    box-shadow: 10px 10px 5px #acd0c0;
 }
 
 #dogSectionId h1 {
-    color: #C9A66B;
+    color: #4f6547;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }

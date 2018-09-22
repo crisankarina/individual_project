@@ -1,4 +1,9 @@
-/* Buttons */
+/* Small */
+header {
+  margin-top: 20px;
+  margin-left: 1em;
+  font-size: 25px;
+}
 .info {
   position: relative;
   margin-top: 100px;
@@ -7,60 +12,100 @@
   font-size: 20px;
   -webkit-transition-duration: 0.3s; 
   transition-duration: 0.3s;
-
 }
-/* #011A27 */
+
 .info:hover {
-  background-color: #063852;
-  border-radius: 45px 40px;
+  background-color: #FFCCBB;
+  border-radius: 15px 50px;
   cursor: pointer;
+  color: black;
+  border: 2px solid black;
 }
 
-#js-box {
-  float: left;
-  margin-left: 20%;
+#js-box, #hobbies-box {
+  margin-left: 5em;
+  margin-right: 5em;
 }
 
-#hobbies-box {
-  float: right;
-  margin-right: 20%;
-  padding-left: 3%;
-  padding-right: 3%;
+#js-box p, #hobbies-box p {
+  font-size: 22px;
 }
-
-/* TECHNICAL PART */
 .technicalClass {
   list-style-type: circle;
   display: inline-block;
   position: relative;
-  margin-left: 300px;
+  margin-left: 3em;
   visibility: hidden;
 }
 
-.technicalClass li {
+.technicalClass li{
   padding: 10px;
+  color: black;
 }
 
-.technicalClass a, .hobbiesClass a {
+.technicalClass a{
+  color: black;
   cursor: pointer;
 }
 
-.technicalClass li:hover, .hobbiesClass li:hover {
+.technicalClass li:hover{
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-/* HOBBIES PART */
-.hobbiesClass {
-  list-style-type: circle;
-  display: inline-block;
-  position: relative;
-  margin-left: 150px;
-  visibility: hidden;
-}
-.hobbiesClass li {
-  padding: 10px;
+/* Tablets */
+@media (min-width: 768px) { 
+  header {
+      /* margin-top: 20%; */
+      font-size: 30px; 
+  }
+  .meniu li {
+      font-size: 20px; 
+  }
+} 
+
+/* Desktops */
+@media (min-width: 992px) { 
+  header {
+      font-size: 35px; 
+  }
+  .meniu li {
+      font-size: 25px;
+  }
+  .technicalClass {
+    margin-left: 15em;
+  }
+
+  #js-box p, #hobbies-box p{
+    font-size: 25px;
+  }
+
+  #js-box, #hobbies-box {
+    margin-left: 8em;
+    margin-right: 8em;
+  }
+} 
+
+
+/* Extra large devices */
+@media (min-width: 1200px) {
+  header {
+      font-size: 40px;
+  }
+
+  .meniu li {
+      font-size: 30px;
+  }
+
+  #js-box p, #hobbies-box p{
+    font-size: 30px;
+  }
+
+  #js-box, #hobbies-box {
+    margin-left: 10em;
+    margin-right: 10em;
+  }
 }
 
 

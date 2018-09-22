@@ -1,0 +1,24 @@
+article {
+    width: 100%;
+    /* min-height: 100vh; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1em;
+    /* text-align: center; */
+}
+
+section {
+    flex-basis: 40%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+section h1 {
+    text-align: center;
+}
+
+/* EDUCATION
+#educationSectionId h1, #professionalExpSectionId h1 {
+    text-align: center;
+} */

@@ -1,16 +1,16 @@
 * {
     margin: 0; 
     padding: 0;
-    color:#ffffff;
     z-index: 4; 
     cursor: default;  
     box-sizing: border-box; 
 }
 
 body {
-    background: black;
     font-family: "Courier New", Courier, monospace;
     font-size: 20px;
+    background-color: black;
+    color: white;
 }
 
 header { 
@@ -36,4 +36,23 @@ a {
     border-bottom: 1px outset #ebebe0;
     font-size: 15px;
 } 
+
+.meniu li a {
+    color: white;
+}
+
+section {
+    background-color: #FFCCBB;
+    box-shadow: 5px 5px 5px #E2E8E4;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+footer a {
+    color: white;
+    cursor: pointer;
+}
 
