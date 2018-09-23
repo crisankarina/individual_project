@@ -3,7 +3,7 @@ $(onHtmlLoaded);
 function onHtmlLoaded(){
     console.log("DOM loaded");
 
-    //display technical information
+    //display technical information and display hobbies
     var displayTechnical = function(){
         var info = $(".technicalClass");
         info.css("visibility", "visible");
@@ -11,14 +11,8 @@ function onHtmlLoaded(){
     var jsBox = $("#js-box");
     jsBox.on("click", displayTechnical);
 
-    //display hobbies
-    var displayHobbies = function(){
-        var hobbies = $(".hobbiesClass");
-        hobbies.css("visibility", "visible");
-    }
-
     var hobbiesBox = $("#hobbies-box");
-    hobbiesBox.on("click", displayHobbies);
+    hobbiesBox.on("click", displayTechnical);
 
   
     

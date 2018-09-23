@@ -8,7 +8,7 @@
 
 body {
     font-family: "Courier New", Courier, monospace;
-    font-size: 20px;
+    font-size: 15px;
     background-color: black;
     color: white;
 }
@@ -18,14 +18,16 @@ header {
     text-align: center;
     font-size: 30px;
 }
-
+/* MENIU */
 .meniu {
     list-style-type: none;
 } 
 
-a {
+.meniu li a {
     text-decoration: none;
     cursor: pointer;
+    color: white;
+
 }
 
 .meniu li {
@@ -34,25 +36,81 @@ a {
     padding: 1%;
     margin: 0.5%;
     border-bottom: 1px outset #ebebe0;
-    font-size: 15px;
+    font-size: 20px;
 } 
 
-.meniu li a {
-    color: white;
+/* ARTICLE and SECTION */
+article {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1em;
+    text-align: center;
 }
 
 section {
+    flex-basis: 40%;
+    margin-bottom: 1em;
+    margin-top: 1em;
     background-color: #FFCCBB;
     box-shadow: 5px 5px 5px #E2E8E4;
 }
 
+section:hover {
+    text-shadow: 1px 1px 2px black, 0 0 25px #FF4447, 0 0 5px #FF4447;
+} 
+
+
+/* FOOTER */
 footer{
     position: fixed;
     bottom: 0;
     left: 0;
+    background-color: black;
+    border: 1px solid #ffdc73;
 }
 footer a {
     color: white;
     cursor: pointer;
+    text-decoration: none;
+    
 }
+
+footer:hover {
+    text-shadow: 1px 1px 2px black, 0 0 25px #ffcf40, 0 0 5px #ffcf40;
+}
+
+/* INPUT */
+input[type="text"], button{
+    background: black;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 3px 1px;
+    cursor: text;
+    color: white;
+}
+
+/* input[type="text"]:hover {
+    background-color: #E2E8E4;
+    color: black;
+} */
+
+button {
+    padding: 3px 20px;
+    color: white;
+    cursor: pointer;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    padding: 5px 20px;
+}
+
+button:hover {
+    background-color: #E2E8E4;
+    color: black;
+    border: 1px solid black;
+    border-radius: 45%;
+    opacity: 0.85;
+}
+
 

@@ -9,12 +9,12 @@ function onHtmlLoaded(){
         var gameSection = document.getElementById("gameSectionId");
         
         var userWins = function() {
-            gameSection.style.background = "#2C7873";
+            gameSection.style.background = "#df9fbf";
             inputText.style.border = "1px solid white";
         }
 
         var computerWins = function() {
-            gameSection.style.background = "#53ac7a";
+            gameSection.style.background = "#cccccc";
             inputText.style.border = "1px solid white";
         }
 
@@ -47,7 +47,7 @@ function onHtmlLoaded(){
         }
         if(userChoice === computerChoice) {
             resultMessage.innerHTML = "It is a tie!";
-            gameSection.style.background = "#004445";
+            gameSection.style.background = "#ffb3ff";
         } 
         if (userChoice === "rock"){
             if(computerChoice === "scissors") {

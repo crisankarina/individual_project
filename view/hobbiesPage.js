@@ -54,7 +54,7 @@ console.log("hello");
         for(var i = 0; i < response.length; i++) {
             var showName = response[i].show.name;
             var url = response[i].show.url;
-            showList += `<li>` + showName + `<br>` + `<p>Link where you can find the TV series</p>` + `<a href="` + url + `" target="_blank">` + url + `</a>` + `</li>`;
+            showList +=`<li>` + `<a href="` + url + `" target="_blank">` + showName + `</a>` + `</li>`;
         }
         showList += `</ul>`;
         return showList;

@@ -46,6 +46,7 @@ header {
 .technicalClass a{
   color: black;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .technicalClass li:hover{

@@ -1,138 +1,89 @@
+/* Small */
 body {
     background-color: black;
     color: black;
   }
-
-article {
-    width: 100%;
-    /* min-height: 100vh; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 1em;
-    /* text-align: center; */
-}
-
-section {
-    flex-basis: 40%;
-    margin-bottom: 1em;
-    margin-top: 1em;
-}
-
-h1 {
-    text-align: center;
-}
-
-/* Input and buttons */
-input[type=text], button{
-    background: black;
-    border: 1px solid white;
-    border-radius: 4px;
-    padding: 3px 1px;
-    cursor: text;
-}
-button {
-    padding: 3px 20px;
-    color: white;
-    cursor: pointer;
-}
-button:hover {
-    background-color: #063852;
-}
-button:active {
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
-/* Reading Section */
-#readingSectionId {
-    background-color: #500805;
-    box-shadow: 10px 10px 5px #BC6D4F;
-}
-
-#readingSectionId h2 {
-    color: white;
-    text-shadow: 1px 1px 2px black, 0 0 25px #fee6e9, 0 0 5px #fee6e9;
-}
-
 /* Gaming Section */
-/* #gamingSectionId {
-    background-color: #F79B77;
-    box-shadow: 10px 10px 5px #755348;
-    text-shadow: 2px 2px 5px #4B4345;
-} */
-
 .gamingImgClass {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .gamingImgClass li a img{
     cursor: pointer;
 }
 
-#moreInfoId {
-    font-size: 12px;
-}
-
-/* Quote Section */
-
-#quoteContainerId{
-    text-align: center;
-}
-
-.inputCharacterClass {
-    text-align: center;
-}
-
-.inputCharacterClass {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: space-around;
+img {
+    width: 100px;
 }
 
 /* Serial Section */
-/* #tvSeriesSectionId {
-    background-color: #662225;
-    box-shadow: 10px 10px 5px #EAD39C;
-    text-shadow: 2px 2px 4px #000000;
-} */
-
-#tvSeriesContainerId ul{
-    list-style-type: circle;
-}
-#tvSeriesContainerId ul li a:hover {
-    color: #FF4447;
+#tvSeriesContainerId a{
+    text-decoration: none;
+    color: black;
 }
 
-#tvSeriesContainerId ul li a:visited {
-    color: grey;
+#tvSeriesContainerId a:hover {
+    cursor: pointer;
+    color: #ffffff;
 }
 
-/* Joke section */
-/* #jokeSectionId {
-    background-color: #128277;
-    box-shadow: 10px 10px 5px #52958b;
+.moreInfoClass {
+    text-align: start;
+    font-size: 12px;
 }
 
-#jokeSectionId h1 {
-    color:  #B9C4C9;
-    text-shadow: 1px 1px 2px black, 0 0 25px #004D47, 0 0 5px #004D47;
-} */
-
-#jokeContainerId {
-    text-align: center;
+/* Tablets  */
+@media (min-width: 768px) { 
+    article {
+        font-size: 20px;
+    }
+    footer {
+        font-size: 18px;
+    }
+    img {
+        width: 120px;
+    }
+    .moreInfoClass {
+        font-size: 14px;
+    }
 }
 
-section {
-    background-color: #FFCCBB;
-    box-shadow: 5px 5px 5px #E2E8E4;
+/* Desktops */
+@media (min-width: 992px){
+    article {
+        font-size: 25px;
+    }
+    .meniu li {
+        font-size: 20px;
+    }
+    footer {
+        font-size: 22px;
+    }
+    img {
+        width: 125px;
+    }
+    .moreInfoClass {
+        font-size: 16px;
+    }
 }
 
-section:hover {
-    text-shadow: 1px 1px 2px black, 0 0 25px #FF4447, 0 0 5px #FF4447;
-} 
-
+/* Extra large devices */
+@media (min-width: 1200px) {
+    article {
+        font-size: 25px;
+    }
+    .meniu li {
+        font-size: 30px;
+    }
+    footer {
+        font-size: 23px;
+    }
+    img {
+        width: 130px;
+    }
+    .moreInfoClass {
+        font-size: 18px;
+    }
+}
