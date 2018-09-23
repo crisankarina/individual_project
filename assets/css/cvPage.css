@@ -1,24 +1,51 @@
-article {
-    width: 100%;
-    /* min-height: 100vh; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 1em;
-    /* text-align: center; */
+body{
+    color: black;
+    font-size: 15px;
+    text-align: justify;
 }
 
-section {
-    flex-basis: 40%;
-    margin-bottom: 1em;
-    margin-top: 1em;
+ul {
+    list-style-type: none;
 }
 
-section h1 {
-    text-align: center;
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
 
-/* EDUCATION
-#educationSectionId h1, #professionalExpSectionId h1 {
-    text-align: center;
-} */
+/* Tablets  */
+@media (min-width: 768px) { 
+    article {
+        font-size: 20px;
+    }
+    footer {
+        font-size: 18px;
+    }
+}
+
+/* Desktops */
+@media (min-width: 992px){
+    article {
+        font-size: 25px;
+    }
+    .meniu li {
+        font-size: 20px;
+    }
+    footer {
+        font-size: 22px;
+    }
+}
+
+/* Extra large devices */
+@media (min-width: 1200px) {
+    article {
+        font-size: 25px;
+    }
+    .meniu li {
+        font-size: 30px;
+    }
+    footer {
+        font-size: 23px;
+    }
+}

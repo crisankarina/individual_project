@@ -64,6 +64,9 @@ header {
   .meniu li {
       font-size: 20px; 
   }
+  footer {
+    font-size: 18px;
+  }
 } 
 
 /* Desktops */
@@ -86,6 +89,9 @@ header {
     margin-left: 8em;
     margin-right: 8em;
   }
+  footer {
+    font-size: 22px;
+  }
 } 
 
 
@@ -106,6 +112,9 @@ header {
   #js-box, #hobbies-box {
     margin-left: 10em;
     margin-right: 10em;
+  }
+  footer {
+    font-size: 23px;
   }
 }
 

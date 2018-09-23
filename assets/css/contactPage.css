@@ -1,0 +1,58 @@
+body {
+    color: black;
+}
+
+header{
+    color: white;
+}
+
+a {
+    cursor: pointer;
+}
+
+header {
+    margin-top: 20px;
+    margin-left: 1em;
+    font-size: 25px;
+}
+
+/* Tablets */
+@media (min-width: 768px) { 
+    header {
+        /* margin-top: 20%; */
+        font-size: 30px; 
+    }
+    .meniu li {
+        font-size: 20px; 
+    }
+    form {
+        font-size: 20px;
+    }
+} 
+
+/* Desktops */
+@media (min-width: 992px) { 
+    header {
+        font-size: 35px; 
+    }
+    .meniu li {
+        font-size: 25px;
+    }
+    form {
+        font-size: 25px;
+    }
+}
+
+/* Extra large devices */
+@media (min-width: 1200px) {
+  header {
+      font-size: 40px;
+  }
+
+  .meniu li {
+      font-size: 30px;
+  }
+  form {
+        font-size: 25px;
+}
+}
