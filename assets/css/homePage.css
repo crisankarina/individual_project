@@ -1,3 +1,14 @@
+header {
+    margin-top: 4em;
+}
+
+
+div {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 0;
+}
 
 /* Tablets */
  @media (min-width: 768px) { 
@@ -8,6 +19,11 @@
 
     .meniu li {
         font-size: 15px; 
+    }
+
+    div {
+        font-size: 20px;
+        margin-top: 0;
     }
 } 
 
@@ -21,6 +37,11 @@
     .meniu li {
         font-size: 20px;
     }
+
+    div{
+        font-size: 30px;
+        margin-top: 0;
+    }
 } 
 
 /* Extra large devices */
@@ -33,7 +54,13 @@
     .meniu li {
         font-size: 30px;
     }
+
+    div {
+        font-size: 40px;
+        margin-top: 0;
+    }
 }
+
 
 
 /* Animation */
